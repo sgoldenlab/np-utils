@@ -1,0 +1,16 @@
+[project]
+name = "ks-cmap-to-mat"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["ipykernel>=6.30.1", "jupyter>=1.1.1", "kilosort[gui]==4.0.22"]
+
+[build-system]
+requires = ["uv_build>=0.8.15,<0.9.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "ks_cmap_to_mat"
+module-root = ""
+
+[project.scripts]
+ks_cmap_to_mat = "ks_cmap_to_mat.ks_cmap_to_mat:cli_main"
